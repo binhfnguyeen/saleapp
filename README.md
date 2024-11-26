@@ -1,4 +1,6 @@
 # Xây dựng website bán điện thoại
 
-Name: Chau Binh Nguyen
-Nickname: heulwen
+<ul>
+  <li>Name: Chau Binh Nguyen</li>
+  <li>Nickname: heulwen</li>
+</ul>
