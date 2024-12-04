@@ -41,65 +41,65 @@ if __name__ == '__main__':
         u = User(name='admin', username='admin', password=str(hashlib.md5('123456'.encode('utf-8')).hexdigest()), user_role=UserRole.ADMIN)
         db.session.add(u)
         db.session.commit()
-        # c1 = Category(name='Mobile')
-        # c2 = Category(name='Desktop')
-        # c3 = Category(name='Tablet')
-        #
-        # db.session.add_all([c1, c2, c3])
-        # db.session.commit()
+        c1 = Category(name='Mobile')
+        c2 = Category(name='Desktop')
+        c3 = Category(name='Tablet')
 
-        # products = [{
-        #     "name": "iPhone 7 Plus",
-        #     "description": "Apple, 32GB, RAM: 3GB, iOS13",
-        #     "price": 17000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1688179242/hclq65mc6so7vdrbp7hz.jpg",
-        #     "category_id": 1
-        # }, {
-        #     "name": "iPad Pro 2020",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2021",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2022",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2023",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2024",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2021",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }, {
-        #     "name": "iPad Pro 2022",
-        #     "description": "Apple, 128GB, RAM: 6GB",
-        #     "price": 37000000,
-        #     "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
-        #     "category_id": 2
-        # }]
-        #
-        # for p in products:
-        #     prod = Product(**p)
-        #     db.session.add(prod)
-        #
-        # db.session.commit()
+        db.session.add_all([c1, c2, c3])
+        db.session.commit()
+
+        products = [{
+            "name": "iPhone 7 Plus",
+            "description": "Apple, 32GB, RAM: 3GB, iOS13",
+            "price": 17000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1688179242/hclq65mc6so7vdrbp7hz.jpg",
+            "category_id": 1
+        }, {
+            "name": "iPad Pro 2020",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2021",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2022",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2023",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2024",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2021",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }, {
+            "name": "iPad Pro 2022",
+            "description": "Apple, 128GB, RAM: 6GB",
+            "price": 37000000,
+            "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1690528735/cg6clgelp8zjwlehqsst.jpg",
+            "category_id": 2
+        }]
+
+        for p in products:
+            prod = Product(**p)
+            db.session.add(prod)
+
+        db.session.commit()
